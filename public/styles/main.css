@@ -1,0 +1,99 @@
+:root {
+  font-size: 16px;
+  font-family: 'Roboto' sans-serif;
+}
+
+div.topbar {
+  background-color: #009fa9;
+  padding: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h6 {
+  display: inline-block;
+}
+
+#bannerCarousel {
+  max-height: 80vh;
+}
+
+#bannerCarousel .banner-title {
+  font-size: 450%;
+  letter-spacing: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#bannerCarousel .carousel-item img {
+  max-height: 80vh;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#bannerCarousel .carousel-item .carousel-caption {
+  top: 40%;
+}
+
+#reviewsCarousel .carousel-control-prev {
+  background: #009fa9;
+  background: -webkit-gradient(linear, left top, right top, color-stop(18%, #009fa9), to(white));
+  background: linear-gradient(90deg, #009fa9 18%, white 100%);
+  border-radius: 20px;
+}
+
+#reviewsCarousel .carousel-control-next {
+  background: #009fa9;
+  background: -webkit-gradient(linear, left top, right top, color-stop(18%, white), to(#009fa9));
+  background: linear-gradient(90deg, white 18%, #009fa9 100%);
+  border-radius: 20px;
+}
+
+.c-card-logo {
+  display: block;
+  margin: 0 auto;
+  color: #009fa9;
+}
+
+.card {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer.footer {
+  background-color: #F8F8F8;
+  padding: 4rem 2rem;
+}
+
+.c-footer-icon {
+  max-width: 2rem;
+}
+
+.c-bg-primary {
+  background-color: #009fa9;
+}
+
+.footer-menu {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-menu:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.footer-menu h3 {
+  font-weight: bold;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+.footer-menu ul li a {
+  font-weight: 400;
+  font-size: 0.875rem !important;
+}
+/*# sourceMappingURL=main.css.map */

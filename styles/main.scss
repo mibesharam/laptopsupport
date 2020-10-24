@@ -1,0 +1,103 @@
+@import "./variable.scss";
+
+:root{
+    font-size: 16px;
+    font-family: 'Roboto' sans-serif;
+}
+
+
+div.topbar{
+    background-color: $color-primary;
+    padding: .5rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h6{
+    display: inline-block;
+}
+
+#bannerCarousel{
+    max-height: 80vh;
+    //overflow: hidden;
+    .banner-title{
+        font-size:450%;
+        letter-spacing: 6px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .carousel-item{
+        
+        img{
+            max-height: 80vh;
+            filter: brightness(50%);
+        }
+
+        .carousel-caption{
+            top: 40%;
+        }
+    }
+}
+
+#reviewsCarousel{
+    .carousel-control-prev {
+        background: $color-primary;
+        background: linear-gradient(90deg, rgba(0,159,169,1) 18%, rgba(255,255,255,1) 100%);
+        border-radius: 20px;
+    }
+
+    .carousel-control-next {
+        background: $color-primary;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 18%,  rgba(0,159,169,1)  100%);
+        border-radius: 20px;
+    }
+}
+
+
+.c-card-logo{
+    display: block;
+    margin: 0 auto;
+    color: $color-primary;
+}
+
+.card{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer.footer{
+    background-color: $bg-grey-1 ;
+    padding: 4rem 2rem;
+}
+
+.c-footer-icon{
+    max-width: 2rem;
+}
+.c-bg-primary{
+    background-color: $color-primary;
+}
+.footer-menu{
+    font-family: 'Roboto', sans-serif;
+    &:not(:last-child){
+        margin-right: 5rem;
+    }
+    h3{
+        
+        font-weight: bold;
+    }
+
+    ul{
+        list-style-type: none;
+        padding-left: 0.5rem;
+        
+        li{
+            a{
+                font-weight: 400;
+                font-size: 0.875rem !important;
+            }
+            
+        }
+    }
+}

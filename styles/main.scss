@@ -20,6 +20,11 @@ h6{
     display: inline-block;
 }
 
+.nav-link{
+    font-family: 'Roboto' sans-serif;
+    font-weight: 500;
+}
+
 #bannerCarousel{
     max-height: 80vh;
     //overflow: hidden;
@@ -46,13 +51,20 @@ h6{
         background: $color-primary;
         background: linear-gradient(90deg, rgba(0,159,169,1) 18%, rgba(255,255,255,1) 100%);
         border-radius: 20px;
+        clip-path: circle(16%);
     }
 
     .carousel-control-next {
         background: $color-primary;
         background: linear-gradient(90deg, rgba(255,255,255,1) 18%,  rgba(0,159,169,1)  100%);
         border-radius: 20px;
+        clip-path: circle(16%);
     }
+}
+
+#services{
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 

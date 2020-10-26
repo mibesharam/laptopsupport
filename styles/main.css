@@ -17,6 +17,11 @@ h6 {
   display: inline-block;
 }
 
+.nav-link {
+  font-family: 'Roboto' sans-serif;
+  font-weight: 500;
+}
+
 #bannerCarousel {
   max-height: 80vh;
 }
@@ -42,6 +47,8 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, color-stop(18%, #009fa9), to(white));
   background: linear-gradient(90deg, #009fa9 18%, white 100%);
   border-radius: 20px;
+  -webkit-clip-path: circle(16%);
+          clip-path: circle(16%);
 }
 
 #reviewsCarousel .carousel-control-next {
@@ -49,6 +56,13 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, color-stop(18%, white), to(#009fa9));
   background: linear-gradient(90deg, white 18%, #009fa9 100%);
   border-radius: 20px;
+  -webkit-clip-path: circle(16%);
+          clip-path: circle(16%);
+}
+
+#services {
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 
 .c-card-logo {

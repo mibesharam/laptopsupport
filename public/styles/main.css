@@ -19,7 +19,11 @@ h6 {
 
 .nav-link {
   font-family: 'Roboto' sans-serif;
-  font-weight: 500;
+}
+
+.point-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 #bannerCarousel {
@@ -58,6 +62,10 @@ h6 {
   border-radius: 20px;
   -webkit-clip-path: circle(16%);
           clip-path: circle(16%);
+}
+
+#contactSection {
+  background-color: #009fa9;
 }
 
 #services {

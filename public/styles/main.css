@@ -1,6 +1,65 @@
+@charset "UTF-8";
 :root {
   font-size: 16px;
   font-family: 'Roboto' sans-serif;
+}
+
+div#spinner-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#spinner-wrapper .spinner {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #009fa9;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+div#spinner-wrapper .spinner-text {
+  font-size: 2rem;
+  color: white;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 div.topbar {
@@ -27,7 +86,8 @@ h6 {
 }
 
 #bannerCarousel {
-  max-height: 80vh;
+  height: 90vh;
+  overflow: hidden;
 }
 
 #bannerCarousel .banner-title {
@@ -37,13 +97,15 @@ h6 {
 }
 
 #bannerCarousel .carousel-item img {
-  max-height: 80vh;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  max-height: 100%;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
 }
 
 #bannerCarousel .carousel-item .carousel-caption {
-  top: 40%;
+  top: 30%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 #reviewsCarousel .carousel-control-prev {
@@ -64,13 +126,55 @@ h6 {
           clip-path: circle(16%);
 }
 
+a.btn-banner {
+  margin: 1.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+a.btn-banner.call:hover {
+  background-color: #009fa9;
+  text-decoration: none;
+  color: white;
+}
+
+a.btn-banner.inquiry:hover {
+  background-color: #009fa9;
+  text-decoration: none;
+  color: white;
+}
+
 #contactSection {
   background-color: #009fa9;
+}
+
+.section-title {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
 }
 
 #services {
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
+  background: #023b44;
+  background: linear-gradient(149deg, #023b44 0%, #00bbd5 90%, #00e0ff 100%);
+}
+
+#services ul {
+  list-style: none;
+}
+
+#services ul li {
+  font-size: 1.2rem;
+}
+
+#services ul li:before {
+  content: '👉';
+  margin-right: 1rem;
 }
 
 .c-card-logo {
@@ -117,5 +221,38 @@ footer.footer {
 .footer-menu ul li a {
   font-weight: 400;
   font-size: 0.875rem !important;
+}
+
+.emoji-icon {
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 576px) {
+  #services {
+    border-radius: 0;
+    background: #023b44;
+    background: linear-gradient(149deg, #023b44 0%, #00bbd5 50%, #023b44 100%);
+  }
+  #bannerCarousel {
+    height: auto;
+  }
+  #bannerCarousel .carousel-caption {
+    text-align: left;
+    top: 3rem !important;
+  }
+  #bannerCarousel .banner-title {
+    font-size: 1.7rem;
+    letter-spacing: 6px;
+    font-family: 'Roboto', sans-serif;
+  }
+  #bannerCarousel p.lead {
+    font-size: 1rem !important;
+  }
+  a.btn-banner {
+    margin: .3rem;
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

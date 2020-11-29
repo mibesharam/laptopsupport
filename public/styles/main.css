@@ -266,6 +266,17 @@ footer.footer {
     padding: 0;
     margin: 1rem auto;
   }
+  #whyUs .card .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #whyUs .card .card-body .my-card-detail {
+    text-align: left;
+  }
   a.btn-banner {
     margin: .3rem;
     text-decoration: none;

@@ -1,7 +1,6 @@
 @charset "UTF-8";
 :root {
   font-size: 16px;
-  font-family: 'Roboto' sans-serif;
 }
 
 div#spinner-wrapper {
@@ -11,6 +10,7 @@ div#spinner-wrapper {
   top: 0;
   z-index: 999999;
   background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +63,8 @@ div#spinner-wrapper .spinner-text {
 }
 
 div.topbar {
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), color-stop(60%, #92FE9D), color-stop(90%, #009fa9));
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 60%, #009fa9 90%);
   background-color: #009fa9;
   padding: .5rem;
 }
@@ -85,15 +87,17 @@ h6 {
   margin-bottom: 2rem;
 }
 
+#diagnose div.row div.col-md-4 {
+  padding-bottom: 0 !important;
+}
+
 #bannerCarousel {
-  height: 90vh;
   overflow: hidden;
 }
 
 #bannerCarousel .banner-title {
   font-size: 450%;
-  letter-spacing: 6px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 #bannerCarousel .carousel-item img {
@@ -152,7 +156,8 @@ a.btn-banner.inquiry:hover {
 }
 
 .section-title {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), color-stop(30%, #92FE9D), color-stop(90%, #009fa9));
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 30%, #009fa9 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent !important;
 }
@@ -175,6 +180,10 @@ a.btn-banner.inquiry:hover {
 #services ul li:before {
   content: '👉';
   margin-right: 1rem;
+}
+
+#whyUs div.card .card-body {
+  text-align: center;
 }
 
 .c-card-logo {
@@ -228,10 +237,16 @@ footer.footer {
 }
 
 @media screen and (max-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
   #services {
     border-radius: 0;
     background: #023b44;
     background: linear-gradient(149deg, #023b44 0%, #00bbd5 50%, #023b44 100%);
+  }
+  #services ul {
+    padding-left: 0px;
   }
   #bannerCarousel {
     height: auto;
@@ -242,11 +257,14 @@ footer.footer {
   }
   #bannerCarousel .banner-title {
     font-size: 1.7rem;
-    letter-spacing: 6px;
     font-family: 'Roboto', sans-serif;
   }
   #bannerCarousel p.lead {
     font-size: 1rem !important;
+  }
+  #whyUs .card {
+    padding: 0;
+    margin: 1rem auto;
   }
   a.btn-banner {
     margin: .3rem;

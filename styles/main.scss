@@ -246,12 +246,30 @@ footer.footer{
         .carousel-caption{
             text-align: left;
             top: 3rem !important;
+
+            span.extra-content{
+                display: none;
+            }
         }
         //overflow: hidden;
         .banner-title{
-            font-size:1.7rem;
+            font-size:2.2rem;
             // letter-spacing: 6px;    
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+        p.lead{
+            text-align: center;
+        }
+        a.btn-banner{
+            text-align: center;
+            display: block;
+            width: 80%;
+            margin: 1rem auto;
+        }
+      
+        .banner-image{
+            height: 80vh !important;
         }
         p.lead{
             font-size: 1rem !important;

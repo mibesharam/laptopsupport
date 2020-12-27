@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 div#spinner-wrapper {
@@ -27,7 +27,7 @@ div#spinner-wrapper .spinner {
           transform-origin: center;
   border: 10px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 10px solid #009fa9;
+  border-top: 10px solid #022335;
   width: 100px;
   height: 100px;
   -webkit-animation: spin 2s linear infinite;
@@ -63,10 +63,13 @@ div#spinner-wrapper .spinner-text {
 }
 
 div.topbar {
-  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), color-stop(60%, #92FE9D), color-stop(90%, #009fa9));
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 60%, #009fa9 90%);
-  background-color: #009fa9;
+  background-color: #022335;
   padding: .5rem;
+  color: #ffb400;
+}
+
+div.topbar .header-icon path {
+  fill: #ffb400;
 }
 
 a {
@@ -113,7 +116,7 @@ h6 {
 }
 
 #reviewsCarousel .carousel-control-prev {
-  background: #009fa9;
+  background: #022335;
   background: -webkit-gradient(linear, left top, right top, color-stop(18%, #009fa9), to(white));
   background: linear-gradient(90deg, #009fa9 18%, white 100%);
   border-radius: 20px;
@@ -122,7 +125,7 @@ h6 {
 }
 
 #reviewsCarousel .carousel-control-next {
-  background: #009fa9;
+  background: #022335;
   background: -webkit-gradient(linear, left top, right top, color-stop(18%, white), to(#009fa9));
   background: linear-gradient(90deg, white 18%, #009fa9 100%);
   border-radius: 20px;
@@ -137,27 +140,36 @@ a.btn-banner {
   padding: 1rem;
   border: 2px solid white;
   border-radius: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 a.btn-banner.call:hover {
-  background-color: #009fa9;
+  background-color: #ffb400;
   text-decoration: none;
   color: white;
 }
 
 a.btn-banner.inquiry:hover {
-  background-color: #009fa9;
+  background-color: #ffb400;
   text-decoration: none;
   color: white;
 }
 
 #contactSection {
-  background-color: #009fa9;
+  background-color: #022335;
 }
 
 .section-title {
-  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), color-stop(30%, #92FE9D), color-stop(90%, #009fa9));
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 30%, #009fa9 90%);
+  background: -webkit-gradient(linear, left top, right top, from(#0071df), color-stop(90%, #022335));
+  background: linear-gradient(90deg, #0071df 0%, #022335 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.section-title-light {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ffb400), to(white));
+  background: linear-gradient(180deg, #ffb400 10%, white 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent !important;
 }
@@ -166,7 +178,7 @@ a.btn-banner.inquiry:hover {
   border-top-right-radius: 20%;
   border-bottom-right-radius: 20%;
   background: #023b44;
-  background: linear-gradient(149deg, #023b44 0%, #00bbd5 90%, #00e0ff 100%);
+  background: linear-gradient(149deg, #022335 0%, #0071df 100%);
 }
 
 #services ul {
@@ -189,7 +201,7 @@ a.btn-banner.inquiry:hover {
 .c-card-logo {
   display: block;
   margin: 0 auto;
-  color: #009fa9;
+  color: #022335;
 }
 
 .card {
@@ -207,7 +219,7 @@ footer.footer {
 }
 
 .c-bg-primary {
-  background-color: #009fa9;
+  background-color: #022335;
 }
 
 .footer-menu {
@@ -236,6 +248,30 @@ footer.footer {
   font-size: 6rem;
 }
 
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+.about-section-icon {
+  fill: #0071df;
+}
+
+.about-profile-background {
+  opacity: 0.4;
+  position: absolute;
+  left: 100%;
+}
+
+.about-misson-background {
+  opacity: 0.4;
+  position: absolute;
+  right: 110%;
+}
+
 @media screen and (max-width: 576px) {
   :root {
     font-size: 14px;
@@ -243,7 +279,7 @@ footer.footer {
   #services {
     border-radius: 0;
     background: #023b44;
-    background: linear-gradient(149deg, #023b44 0%, #00bbd5 50%, #023b44 100%);
+    background: linear-gradient(149deg, #022335 0%, #0071df 100%);
   }
   #services ul {
     padding-left: 0px;
@@ -298,6 +334,21 @@ footer.footer {
     text-decoration: none;
     font-size: .9rem;
     padding: 1rem;
+  }
+  .about-profile-background {
+    display: none;
+  }
+  .about-misson-background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-profile-background {
+    display: none;
+  }
+  .about-misson-background {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

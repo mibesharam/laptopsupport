@@ -255,11 +255,40 @@ footer.footer{
     position: absolute;
     right: 110%;
 }
-
+.contact-geo-icon{
+    fill: $color-primary2;
+}
+#addressDiv{
+    position: relative;
+    iframe#desktopMap{
+        position: absolute;
+        width: 100%;
+    }
+    .detailDiv{
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 5px 5px #eee;
+        border-radius: 10px;
+        padding-top:   2rem ;
+        padding-bottom:   2rem ;
+    }
+}
+div#mobileMap{
+    display: none;
+    iframe{
+        border-radius: 10px;
+        
+    }
+}
 
 @media screen and (max-width: $breakpoint-sm){
     :root{
         font-size: 14px;
+    }
+    iframe#desktopMap{
+        display: none;
+    }
+    div#mobileMap{
+        display: block;
     }
     #services{
         border-radius: 0;
@@ -336,6 +365,7 @@ footer.footer{
     .about-misson-background{
         display: none;
     }
+   
 
 }
 
@@ -347,6 +377,15 @@ footer.footer{
     .about-misson-background{
         display: none;
     }
+
+    iframe#desktopMap{
+        display: none;
+    }
+    div#mobileMap{
+        display: block;
+    }
+
+  
 }
 
 

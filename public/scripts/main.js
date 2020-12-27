@@ -5,6 +5,7 @@ function UpdateCurrentYearOnFooter(){
 // function showSpinner(){
 //     const spinner = document.getElementById("spinner-wrapper");
 //     spinner.style.visibility = "visible";
+    // googlemaps : AIzaSyAzLhLETDH0Ig_IQXEngajmu4fV8k88cKo
 // }
 
 function hideSpinner(){

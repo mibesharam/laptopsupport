@@ -272,9 +272,45 @@ footer.footer {
   right: 110%;
 }
 
+.contact-geo-icon {
+  fill: #0071df;
+}
+
+#addressDiv {
+  position: relative;
+}
+
+#addressDiv iframe#desktopMap {
+  position: absolute;
+  width: 100%;
+}
+
+#addressDiv .detailDiv {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 0 5px 5px #eee;
+          box-shadow: 0 0 5px 5px #eee;
+  border-radius: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+div#mobileMap {
+  display: none;
+}
+
+div#mobileMap iframe {
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 576px) {
   :root {
     font-size: 14px;
+  }
+  iframe#desktopMap {
+    display: none;
+  }
+  div#mobileMap {
+    display: block;
   }
   #services {
     border-radius: 0;
@@ -349,6 +385,12 @@ footer.footer {
   }
   .about-misson-background {
     display: none;
+  }
+  iframe#desktopMap {
+    display: none;
+  }
+  div#mobileMap {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */

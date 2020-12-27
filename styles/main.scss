@@ -276,7 +276,7 @@ div#mobileMap{
     display: none;
     iframe{
         border-radius: 10px;
-        
+
     }
 }
 
@@ -300,6 +300,26 @@ div#mobileMap{
         }
     }
 
+    #aboutBanner {
+        .content-col{
+            order: 2;
+            text-align: center;
+        }
+        .image-col{
+            order: 1;
+        }
+    }
+
+    #contactBanner {
+        .content-col{
+            order: 2;
+            text-align: center;
+        }
+        .image-col{
+            order: 1;
+        }
+    }
+
     #bannerCarousel{
         height: auto;
 
@@ -313,27 +333,30 @@ div#mobileMap{
         }
         //overflow: hidden;
         .banner-title{
-            font-size:2.2rem;
+            font-size:2.5rem;
             // letter-spacing: 6px;    
             font-family: 'Montserrat', sans-serif;
             text-align: center;
+            font-weight: 500;
         }
         p.lead{
             text-align: center;
+            font-size: 1.4rem;
+            font-weight: 300;
+
         }
         a.btn-banner{
             text-align: center;
             display: block;
-            width: 80%;
+            width: 60%;
             margin: 1rem auto;
+            font-size: 1.5rem;
         }
       
         .banner-image{
             height: 80vh !important;
         }
-        p.lead{
-            font-size: 1rem !important;
-        }
+      
     }
 
     #whyUs{

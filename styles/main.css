@@ -320,6 +320,28 @@ div#mobileMap iframe {
   #services ul {
     padding-left: 0px;
   }
+  #aboutBanner .content-col {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  #aboutBanner .image-col {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #contactBanner .content-col {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  #contactBanner .image-col {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   #bannerCarousel {
     height: auto;
   }
@@ -331,24 +353,25 @@ div#mobileMap iframe {
     display: none;
   }
   #bannerCarousel .banner-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    font-weight: 500;
   }
   #bannerCarousel p.lead {
     text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
   }
   #bannerCarousel a.btn-banner {
     text-align: center;
     display: block;
-    width: 80%;
+    width: 60%;
     margin: 1rem auto;
+    font-size: 1.5rem;
   }
   #bannerCarousel .banner-image {
     height: 80vh !important;
-  }
-  #bannerCarousel p.lead {
-    font-size: 1rem !important;
   }
   #whyUs .card {
     padding: 0;

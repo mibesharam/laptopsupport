@@ -12,6 +12,7 @@ function hideSpinner(){
     const spinner = document.getElementById("spinner-wrapper");
     spinner.style.visibility = "hidden";
 }
+
 hideSpinner(); 
 
 window.onload = function(e){

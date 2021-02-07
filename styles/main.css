@@ -40,6 +40,10 @@ div#spinner-wrapper .spinner-text {
   color: white;
 }
 
+main#mainContent {
+  min-height: 80vh;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -70,6 +74,12 @@ div.topbar {
 
 div.topbar .header-icon path {
   fill: #ffb400;
+}
+
+div.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 a {
@@ -300,6 +310,41 @@ div#mobileMap {
 
 div#mobileMap iframe {
   border-radius: 10px;
+}
+
+.my-card {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 5px #eee;
+          box-shadow: 0 0 5px 5px #eee;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.my-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+div#moveToTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+div#moveToTop button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+div#moveToTop button svg {
+  fill: #ffb400;
 }
 
 @media screen and (max-width: 576px) {
